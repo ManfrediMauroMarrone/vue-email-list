@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+}
+.list-container{
+ width: 800px;
+ height: 800px;
+ background-image: url(https://paper-media.com/media/image/product/5293/lg/mbc-8329_carta-da-lettera-decorati-vecchio-rotolo-di-carta.jpg);
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.list-container p{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
