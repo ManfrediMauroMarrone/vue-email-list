@@ -2,86 +2,22 @@ var app = new Vue({
     el: '#root',
     data: {
 
-      mailList :{
-        mail1:'',
-        mail2:'',
-        mail3:'',
-        mail4:'',
-        mail5:'',
-        mail6:'',
-        mail7:'',
-        mail8:'',
-        mail9:'',
-        mail10:'',
-      }
+      listaMail: [],
 
     },
 
     mounted() {
-      axios
+      for (var i = 0; i < 10; i++) {
+        axios
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((risposta) => {
-          this.mailList.mail1 = risposta.data.response
+          this.listaMail.push(risposta.data.response)
 
         });
 
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail12 = risposta.data.response
+      }
+      
+    },
 
-        });
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail3 = risposta.data.response
 
-        });
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail4 = risposta.data.response
-
-        });
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail5 = risposta.data.response
-
-        });
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail6 = risposta.data.response
-
-        });
-
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail7 = risposta.data.response
-
-        });
-
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail8 = risposta.data.response
-
-        });
-
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail9 = risposta.data.response
-
-        });
-
-      axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((risposta) => {
-          this.mailList.mail10 = risposta.data.response
-
-        });
-    }
 });
