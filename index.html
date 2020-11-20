@@ -8,11 +8,8 @@
   </head>
   <body>
     <div id="root">
-      <p>
-        {{mailList.mail1}}
-        {{mailList.mail2}}
-        {{mailList.mail3}}
-
+      <p v-for="mail in mailList">
+        {{mail}}
       </p>
 
     </div>
