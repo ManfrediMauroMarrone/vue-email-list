@@ -10,10 +10,12 @@
   <body>
     <div id="root">
       <div class="list-container">
+        <h1>Lista dei clienti da contattare :</h1>
         <p v-for="mail in listaMail">
             {{mail}}
         </p>
-
+        <h2>Il primo cliente da contattare è: </h2>
+        <h3>{{listaMail[getRndInteger(0,9)]}}</h3>
       </div>
 
     </div>

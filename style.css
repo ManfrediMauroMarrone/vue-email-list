@@ -11,7 +11,7 @@
 .list-container{
  width: 800px;
  height: 800px;
- background-image: url(https://paper-media.com/media/image/product/5293/lg/mbc-8329_carta-da-lettera-decorati-vecchio-rotolo-di-carta.jpg);
+ background-image: url(https://images.squarespace-cdn.com/content/v1/55661150e4b07469947504bc/1556485375956-74HAQBWKYAO4T386DJP8/ke17ZwdGBToddI8pDm48kLPswmMOqQZ9-Q6KHLjvbpZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTcpTqfU-ZEsztPyQLxhSSK-PhJjRDDFQG0l3_ZnmWi1QjT9byXZM3ISxo3y1NRptg/3hd1.jpg?format=1000w);
  background-size: cover;
  display: flex;
  justify-content: center;
@@ -19,7 +19,15 @@
  flex-direction: column;
 }
 
+h1{
+  font-size: 25px
+}
+
+h2{
+  margin-bottom: 10px
+}
+
 .list-container p{
-  margin-bottom: 20px;
-  font-size: 25px;
+  margin-bottom: 17px;
+  font-size: 20px;
 }
