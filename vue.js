@@ -3,8 +3,6 @@ var app = new Vue({
     data: {
 
       listaMail: [],
-
-      selected: '',
     },
 
     methods: {
@@ -20,6 +18,7 @@ var app = new Vue({
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((risposta) => {
           this.listaMail.push(risposta.data.response)
+          this.loaded = true
 
         });
 

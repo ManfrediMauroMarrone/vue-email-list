@@ -5,8 +5,11 @@
 }
 
 #root{
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #FFF8DC;
 }
 .list-container{
  width: 800px;
