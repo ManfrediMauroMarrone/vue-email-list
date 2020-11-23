@@ -3,6 +3,8 @@ var app = new Vue({
     data: {
 
       listaMail: [],
+
+      mailNumber : 10
     },
 
     methods: {
@@ -13,7 +15,7 @@ var app = new Vue({
     },
 
     mounted() {
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < this.mailNumber; i++) {
         axios
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((risposta) => {

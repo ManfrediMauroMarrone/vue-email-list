@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="root">
-      <div v-if="listaMail.length == 10" class="list-container">
+      <div v-if="listaMail.length == mailNumber" class="list-container">
         <h1>Lista dei clienti da contattare :</h1>
         <p v-for="mail in listaMail">
             {{mail}}
